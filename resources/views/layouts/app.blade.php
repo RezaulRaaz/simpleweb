@@ -13,15 +13,15 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body class="sb-nav-fixed">
-
+<div id="app">
 @include('layouts.backend.tonavbar')
 
-<div id="layoutSidenav">
+    <div id="layoutSidenav">
     @include('layouts.backend.leftsidebar')
     <div id="layoutSidenav_content">
         <main>
            <div class="container-fluid">
-               dsfsdfsd
+               <admin-main></admin-main>
            </div>
         </main>
         <footer class="py-4 bg-light mt-auto">
@@ -38,10 +38,13 @@
         </footer>
     </div>
 </div>
+</div>
 <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+<script src="{{ asset('js/app.js')  }}"></script>
 <!-- Scripts -->
-<script src="{{ asset('js/app.js') }}"></script>
+
 <script src="{{asset('backend/js/scripts.js')}}"></script>
+
 </body>
 </html>
 
